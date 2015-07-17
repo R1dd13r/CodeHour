@@ -1,23 +1,36 @@
-<!--
-<div class="jumbotron">
-  <h1>'Allo, 'Allo!</h1>
-  <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
-  </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
-</div>
--->
-<h1>Codeforces Contests</h1>
+    
+<img src="http://russianaicup.ru/s/1426171668548/assets/application/img/partners/logo_codeforces.png">
 <div>
     <ul>
-        <li ng-repeat="contest in cfcontests" >{{ contest.name }} on {{ contest.startTimeSeconds*1000 | date:'medium'}}</li>
+        <li ng-repeat="contest in cfcontests | orderBy:'startTime'" ><a ng-href="{{contest.url}}">{{ contest.name }}</a> on <strong>{{ contest.startTime | date:'medium'}}</strong> till <strong>{{contest.endTime | date:'medium'}}</strong></li>
     </ul>
 </div>
 
-<h1>TopCoder Contests</h1>
+<img src="https://upload.wikimedia.org/wikipedia/uk/9/99/TopCoder_logo.png">
 <div>
     <ul>
-        <li ng-repeat="contest in tccontests" >{{ contest.contestName }} on {{ contest.codingStartTime | date:'medium'}}</li>
+        <li ng-repeat="contest in tccontests | orderBy:'startTime'" ><a ng-href="{{contest.url}}">{{ contest.name }}</a> on <strong>{{ contest.startTime | date:'medium'}}</strong> till <strong>{{contest.endTime | date:'medium'}}</strong></li>
+    </ul>
+</div>
+
+<img src="http://www.vccircle.com/sites/default/files/styles/large/public/image/VCCircle_HackeRank_logo.jpg?itok=L9YXZYwe">
+<div>
+    <ul>
+        <li ng-repeat="contest in Hrcontests | orderBy:'startTime'" ><a ng-href="{{contest.url}}">{{ contest.name }}</a> on <strong>{{ contest.startTime | date:'medium'}}</strong> till <strong>{{contest.endTime | date:'medium'}}</strong></li>
+    </ul>
+</div>
+
+
+<img src="https://upload.wikimedia.org/wikipedia/en/7/72/CodeChef_logo.png">
+<div>
+    <ul>
+        <li ng-repeat="contest in cccontests | orderBy:'startTime'" ><a ng-href="{{contest.url}}">{{ contest.name }}</a> on <strong>{{ contest.startTime | date:'medium'}}</strong> till <strong>{{contest.endTime | date:'medium'}}</strong></li>
+    </ul>
+</div>
+
+<img src="https://a.disquscdn.com/get?url=http%3A%2F%2Fengineering.hackerearth.com%2Fimages%2FHE-logo.png&key=9MD66GBv0Q7ahljEmIqSfA">
+<div>
+    <ul>
+        <li ng-repeat="contest in Hecontests" ><a ng-href="{{contest.url}}">{{ contest.name }}</a> on <strong>{{ contest.startTime | date:'medium'}}</strong> till <strong>{{contest.endTime | date:'medium'}}</strong></li>
     </ul>
 </div>
