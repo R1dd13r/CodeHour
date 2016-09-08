@@ -1,0 +1,52 @@
+
+<a href="http://codeforces.com">
+    <img src="http://russianaicup.ru/s/1426171668548/assets/application/img/partners/logo_codeforces.png">
+</a>
+<div>
+    <ul>
+        <li ng-repeat="contest in cfcontests | orderBy:'startTime'" ><a ng-href="{{contest.url}}">{{ contest.name }}</a> on <strong>{{ contest.startTime | date:'medium'}}</strong> till <strong>{{contest.endTime | date:'medium'}}</strong></li>
+    </ul>
+</div>
+
+
+<a href="http://topcoder.com">
+    <img src="https://upload.wikimedia.org/wikipedia/uk/9/99/TopCoder_logo.png">
+</a>
+<div>
+    <ul>
+        <li ng-repeat="contest in tccontests | orderBy:'startTime'" ><a ng-href="{{contest.url}}">{{ contest.name }}</a> on <strong>{{ contest.startTime | date:'medium'}}</strong> till <strong>{{contest.endTime | date:'medium'}}</strong></li>
+    </ul>
+</div>
+
+
+
+
+<a href="http://hackerrank.com">
+    <img src="https://upload.wikimedia.org/wikipedia/en/d/df/HackerRank_logo_with_slogan.png" width = 200 height = 50>
+</a>
+<div>
+    <ul>
+        <li ng-repeat="contest in Hrcontests | orderBy:'startTime'" ><a ng-href="{{contest.url}}">{{ contest.name }}</a> on <strong>{{ contest.startTime | date:'medium'}}</strong> till <strong>{{contest.endTime | date:'medium'}}</strong></li>
+    </ul>
+</div>
+
+
+
+<a href="http://codechef.com">
+    <img src="https://upload.wikimedia.org/wikipedia/en/7/72/CodeChef_logo.png">
+</a>
+<div>
+    <ul>
+        <li ng-repeat="contest in cccontests | orderBy:'startTime'" ><a ng-href="{{contest.url}}">{{ contest.name }}</a> on <strong>{{ contest.startTime | date:'medium'}}</strong> till <strong>{{contest.endTime | date:'medium'}}</strong></li>
+    </ul>
+</div>
+
+
+<a href="http://hackerearth.com">
+    <img src="https://a.disquscdn.com/get?url=http%3A%2F%2Fengineering.hackerearth.com%2Fimages%2FHE-logo.png&key=9MD66GBv0Q7ahljEmIqSfA">
+</a>
+<div>
+    <ul>
+        <li ng-repeat="contest in Hecontests" ><a ng-href="{{contest.url}}">{{ contest.name }}</a> on <strong>{{ contest.startTime | date:'medium'}}</strong> till <strong>{{contest.endTime | date:'medium'}}</strong></li>
+    </ul>
+</div>
