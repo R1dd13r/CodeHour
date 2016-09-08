@@ -3,14 +3,9 @@
 This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
 version 0.12.1.
 
-## Build & development
+## Development
 
-Run `grunt` for building and `grunt serve` for preview.
+Bower, AngularJs, Bootstrap, jQuery, yeoman. 
 
-## Testing
-
-Running `grunt test` will run the unit tests with karma.
-
-##personal notes
-
-run "npm install" and "bower install" after cloning the repository
+## How to Build
+  install npm and bower then use'bower install' to install all dependencies
